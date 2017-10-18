@@ -11,7 +11,7 @@
   1.导入jar包</br>
   2.cmd命令行中运行命令：wsimport -s . http://...</br>
   3.调用远程服务</br>
-      //1.生成一个客户端代理工厂
+      		//1.生成一个客户端代理工厂
 		JaxWsProxyFactoryBean client = new JaxWsProxyFactoryBean();
 		
 		//2.设置服务端的访问地址
@@ -27,7 +27,4 @@
 		String result = iws.getWeatherByCityName("北京");
 		
 		System.out.println(result);
-    
-    </br>
-    
 此外，如果用spring框架整合的话以上客户端和服务端的类便都可以再applicationContext.xml中初始化了
