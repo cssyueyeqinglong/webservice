@@ -2,10 +2,10 @@
   1.导入jar包<br>
   2.添加服务类，在方法上加注解：@WebService<br>
   3.发布<br>
-    JaxWsServerFactoryBean bean=new JaxWsServerFactoryBean();<br>
-    bean.setAddress(""); <br>
-    bean.setServiceBean(new MyWebService()); <br>
-    bean.create();    <br>
+	    JaxWsServerFactoryBean bean=new JaxWsServerFactoryBean();<br>
+	    bean.setAddress(""); <br>
+	    bean.setServiceBean(new MyWebService()); <br>
+	    bean.create();    <br>
    注意访问的时候后缀需要加上“？wsdl”  </br>
 客户端发起请求的步骤：</br>
   1.导入jar包</br>
